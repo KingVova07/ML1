@@ -81,4 +81,4 @@ LOO <- function(xl){
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/LOO(k).png)
 
 Cамый меньший LOO при k = 6, сделаем карту классификации для k = 6
-![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/LOO(k).png)
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/KNN%20map%20class.png)
