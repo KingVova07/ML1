@@ -28,3 +28,23 @@ sortObjectsByDist <- function(xl, z, metricFunction =
   return (orderedXl);
 }
 ```
+
+Применяем сам метод kNN, то есть создаем функцию, которая сортирует выборку согласно нашего классифицируемого объекта z и относит его к классу ближайших соседей:
+
+```R
+KNN <- function(xl, z,k)
+{
+  
+  n <- dim(xl)[2] - 1
+  
+  
+  classes <- xl[1:k, n + 1]
+
+  counts <- table(classes)
+  class <- names(which.max(counts))
+  
+  return (class)
+}
+```
+
+
