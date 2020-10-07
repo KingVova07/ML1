@@ -78,4 +78,4 @@ LOO <- function(xl){
 ```
 
 График зависимости LOO от k:
-![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/KNN%20k%20=%2010.png)
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/LOO(k).png)
