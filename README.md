@@ -47,5 +47,5 @@ KNN <- function(xl, z,k)
 }
 ```
 Вот пример работы KNN. На графике отображено 10 точек, которым присвоен класс!
-![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Knn%20work.png?)
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/KNN%20k%20=%2010.png)
 
