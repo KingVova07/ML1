@@ -138,7 +138,6 @@ KWNN <- function(xl, z,k,q)
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/map%20KWNN%20q=0.95%20k%20=%2030.png)
 
 При некоторой выборки KWNN эффективнее чем KNN, приведу пример k = 3, q = 0.5
-Верхний скриншот пример работы KNN, он определил точку (1,2) неверно
 
 ![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/master/knn%20%3C%20kwnn.png)
 
