@@ -136,3 +136,7 @@ KWNN <- function(xl, z,k,q)
 
 Искав лучшую k для всех q от 0.01 до 1 с шагом 0.01, пришел к выводу что при k = 30 и q = 0.95, найменьшее LOO(k,q), вот карта классификации для таких характеристик.
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/map%20KWNN%20q=0.95%20k%20=%2030.png)
+
+При некоторой выборки KWNN эффективнее чем KNN, приведу пример k = 3, q = 0.5
+![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/master/knn%20%3C%20kwnn.png)
+![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/master/kwnn%20%3E%20knn.png)
