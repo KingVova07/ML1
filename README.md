@@ -141,6 +141,9 @@ KWNN <- function(xl, z,k,q)
 Верхний скриншот пример работы KNN, он определил точку 1,2 неверно
 
 ![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/master/knn%20%3C%20kwnn.png)
-Нижний скриншот пример работы KWNN, он определил точку верно
+
+Верхний скриншот пример работы KNN, он определил точку 1,2 неверно
 
 ![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/master/kwnn%20%3E%20knn.png)
+
+Нижний скриншот пример работы KWNN, он определил точку верно
