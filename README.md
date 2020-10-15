@@ -179,26 +179,26 @@ KWNN <- function(xl, z,k,q)
 
 Приведу карты классификации, а так же LOO для определения точности
 
-<h3>Прямоугольное ядро</h3>
+<h3><div align="center">Прямоугольное ядро</div></h3>
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Parzen,%20Rightangle,%20h%20=%200.32.png?raw=true)
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/LOO%20Rightangle.png?raw=true)
 
 
-<h3>Треугольное ядро</h3>
+<h3><div align="center">Треугольное ядро</div></h3>
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Triangle_h__0_4.png?raw=true)
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/LOO%20Triangle.png?raw=true)
 
-<h3>Епанечниково ядро</h3>
+<h3><div align="center">Епанечниково ядро</div></h3>
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Parzen,%20Quatric,%20h%20=%200,4.png?raw=true)
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/LOO%20Epanech.png?raw=true)
 
-<h3>Квартическое ядро</h3>
+<h3><div align="center">Квартическое ядро</div></h3>
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Parzen,%20Quatric,%20h%20=%200,4.png?raw=true)
 
