@@ -17,9 +17,9 @@ NN <- function(xl, z)
   return (classes)
 }
 ```
-Вот пример работы этого алгоритма.
+<h3>Вот пример работы этого алгоритма.</h3>
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/1nn.png)
-и Карта классификации
+<h3>и Карта классификации</h3>
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/1NN%20map%20class.png)
 
 Но как увеличить точность метода?
@@ -67,7 +67,7 @@ KNN <- function(xl, z,k)
   return (class)
 }
 ```
-Вот пример работы KNN. На графике отображено 10 точек, которым присвоен класс! В данном случае k = 10
+<h3>Вот пример работы KNN. На графике отображено 10 точек, которым присвоен класс! В данном случае k = 10</h3>
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/KNN%20k%20=%2010.png)
 
 Но как правильно выбрать k?
@@ -98,10 +98,10 @@ LOO <- function(xl){
 }
 ```
 
-График зависимости LOO от k:
+<h3>График зависимости LOO от k:</h3>
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/LOO(k).png)
 
-Cамый меньший LOO при k = 6, сделаем карту классификации для k = 6
+<h3>Cамый меньший LOO при k = 6, сделаем карту классификации для k = 6<h3>
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/KNN%20map%20class.png)
 
 Есть ли другие версии этого алгоритма?
@@ -134,15 +134,17 @@ KWNN <- function(xl, z,k,q)
 }
 ```
 
-Искав лучшую k для всех q от 0.01 до 1 с шагом 0.01, пришел к выводу что при k = 30 и q = 0.95, найменьшее LOO(k,q), вот карта классификации для таких характеристик.
+<h3>Искав лучшую k для всех q от 0.01 до 1 с шагом 0.01, пришел к выводу что при k = 30 и q = 0.95, найменьшее LOO(k,q), вот карта классификации для таких характеристик.</h3>
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/map%20KWNN%20q=0.95%20k%20=%2030.png)
 
-При некоторой выборки KWNN эффективнее чем KNN, приведу пример k = 3, q = 0.5
+<h2>Эффективность KWNN</h2>
+
+<h3>При некоторой выборки KWNN эффективнее чем KNN, приведу пример k = 3, q = 0.5</h3>
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/knn%20%3C%20kwnn.png?raw=true)
 
-Верхний скриншот пример работы KNN, он определил точку (1,2) неверно
+<h3>Верхний скриншот пример работы KNN, он определил точку (1,2) неверно</h3>
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/kwnn%20%3E%20knn.png?raw=true)
 
-Нижний скриншот пример работы KWNN, он определил точку верно
+<h3>Нижний скриншот пример работы KWNN, он определил точку верно</h3>
