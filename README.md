@@ -71,6 +71,7 @@ KNN <- function(xl, z,k)
 }
 ```
 <h3>Вот пример работы KNN. На графике отображено 10 точек, которым присвоен класс! В данном случае k = 10</h3>
+
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/KNN%20k%20=%2010.png)
 
 Но как правильно выбрать k?
@@ -102,9 +103,11 @@ LOO <- function(xl){
 ```
 
 <h3>График зависимости LOO от k:</h3>
+
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/LOO(k).png)
 
 <h3>Cамый меньший LOO при k = 6, сделаем карту классификации для k = 6<h3>
+ 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/KNN%20map%20class.png)
 
 Есть ли другие версии этого алгоритма?
