@@ -18,8 +18,11 @@ NN <- function(xl, z)
 }
 ```
 <h3>Вот пример работы этого алгоритма.</h3>
+
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/1nn.png)
+
 <h3>и Карта классификации</h3>
+
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/1NN%20map%20class.png)
 
 Но как увеличить точность метода?
