@@ -204,7 +204,7 @@ KWNN <- function(xl, z,k,q)
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/LOO%20Quartic.png?raw=true)
 
-<h3>Гауссовское ядро</h3>
+<h3><div align="center">Гауссовское ядро</div></h3>
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Parzen,%20Gauss,%20h%20=%200.1.png?raw=true)
 
