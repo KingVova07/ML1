@@ -173,3 +173,6 @@ KWNN <- function(xl, z,k,q)
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Программная%20реализация%20ядер.png?raw=true)
 
+Реализация алгоритма, а так же Loo для нахождение оптимального h:
+
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Программная%20реализация%20PW.png?raw=true)
