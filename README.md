@@ -110,6 +110,8 @@ LOO <- function(xl){
  
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/KNN%20map%20class.png)
 
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/LOO_6nn_near.png?raw=true)
+
 Есть ли другие версии этого алгоритма?
 
 <h2>Алгоритм k взвешенных ближайших соседей (kwNN)</h2>
