@@ -168,3 +168,8 @@ KWNN <- function(xl, z,k,q)
 Самые распространенные ядра:
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Ядра%20классификаций.png?raw=true)
+
+Вот программная реализация этих ядер:
+
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Программная%20реализация%20ядер.png?raw=true)
+
