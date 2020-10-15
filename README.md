@@ -176,3 +176,10 @@ KWNN <- function(xl, z,k,q)
 Реализация алгоритма, а так же Loo для нахождение оптимального h:
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Программная%20реализация%20PW.png?raw=true)
+
+
+<h2> Метод потенциальных функций </h2>
+Если в методе парзеновского окна центр окна поместить в классифицируемый
+объект, то получим метод потенциальных функций:
+
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Весовая%20функция%20potentioal.png?raw=true)
