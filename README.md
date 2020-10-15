@@ -183,3 +183,9 @@ KWNN <- function(xl, z,k,q)
 объект, то получим метод потенциальных функций:
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Весовая%20функция%20potentioal.png?raw=true)
+
+Теперь ширина окна hi зависит не от классифицируемого объекта, а от
+обучающего xi.
+Реализация алгоритма
+
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Программная%20реализация%20Potentional.png?raw=true)
