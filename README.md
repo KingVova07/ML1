@@ -13,14 +13,14 @@
 <td>0.04667</td>
 </tr>
 <tr>
-<td>knn</td>
-<td>k = 6</td>
-<td>0.0333</td>
+ <td><br>knn</br></td>
+<td><br>k = 6</br></td>
+<td><br>0.0333</br></td>
 </tr>
 <tr>
 <td>kwnn</td>
 <td>k = 30, q = 0.95</td>
-<td>0.03333</td>
+<td>0.0333</td>
 </tr>
 <tr>
 <td>PW</td>
