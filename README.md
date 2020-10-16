@@ -19,27 +19,32 @@
 </tr>
 <tr>
 <td>kwnn</td>
-<td>k = 6, q = 0.56</td>
+<td>k = 30, q = 0.95</td>
+<td>0.03333</td>
+</tr>
+<tr>
+<td>PW</td>
+<td>ker = Rightangle, h = 0.4</td>
 <td>0.04</td>
 </tr>
 <tr>
-<td>kwnn</td>
-<td>k = 6, q = 0.56</td>
+<td>PW</td>
+<td>ker = Triangle, h = 0.4</td>
 <td>0.04</td>
 </tr>
 <tr>
-<td>kwnn</td>
-<td>k = 6, q = 0.56</td>
+<td>PW</td>
+<td>ker = Epanech, h = 0.4</td>
 <td>0.04</td>
 </tr>
 <tr>
-<td>kwnn</td>
-<td>k = 6, q = 0.56</td>
+<td>PW</td>
+<td>ker = Quatric, h = 0.4</td>
 <td>0.04</td>
-</tr>
-<tr>
-<td>kwnn</td>
-<td>k = 6, q = 0.56</td>
+ </tr>
+ <tr>
+<td>PW</td>
+<td>ker = Gauss, h = 0.1</td>
 <td>0.04</td>
  </tr>
  </table>
