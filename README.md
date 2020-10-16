@@ -13,9 +13,9 @@
 <td>0.04667</td>
 </tr>
 <tr>
- <td><br>knn</br></td>
-<td><br>k = 6</br></td>
-<td><br>0.0333</br></td>
+ <td><strong>knn</strong></td>
+<td><strong>k = 6</strong></td>
+<td><strong>0.0333</strong></td>
 </tr>
 <tr>
 <td>kwnn</td>
