@@ -5,7 +5,7 @@
 <tr>
 <th>Метод</th>
 <th>Параметры</th>
-<th>Точность</th>
+<th>Погрешность</th>
 </tr>
 <tr>
 <td>1nn</td>
@@ -45,6 +45,26 @@
  <tr>
 <td>PW</td>
 <td>ker = Gauss, h = 0.1</td>
+<td>0.04</td>
+ </tr>
+ <tr>
+<td>Potentional</td>
+<td>ker = Rightangle, h = 0.4, eps = 6</td>
+<td>0.04</td>
+ </tr>
+  <tr>
+<td>Potentional</td>
+<td>ker = Triangle, h = 0.4, eps = 6</td>
+<td>0.04</td>
+ </tr>
+  <tr>
+<td>Potentional</td>
+<td>ker = Epanech, h = 0.4, eps = 6</td>
+<td>0.04</td>
+ </tr>
+  <tr>
+<td>Potentional</td>
+<td>ker = Quatric, h = 0.4, eps = 6</td>
 <td>0.04</td>
  </tr>
  </table>
@@ -273,7 +293,7 @@ KWNN <- function(xl, z,k,q)
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Программная%20реализация%20Potentional.png?raw=true)
 
-А вот карта классификаций и график потенциалов
+А вот карта классификаций
 
 <h3><div align="center">Прямоугольное ядро</div></h3>
 
