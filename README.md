@@ -293,22 +293,30 @@ KWNN <- function(xl, z,k,q)
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Программная%20реализация%20Potentional.png?raw=true)
 
-А вот карта классификаций
+А вот карта классификаций и карта потенциалов
 
 <h3><div align="center">Прямоугольное ядро</div></h3>
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Potentional,%20rightangle,%20eps%20=%207.png?raw=true)
 
+![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/master/Rightangle%20potentional.jpg)
+
 <h3><div align="center">Треугольное ядро</div></h3>
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Potentional,%20eps%20=%207,%20triangle.png?raw=true)
+
+![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/master/triangle.jpg)
 
 <h3><div align="center">Епанечниково ядро</div></h3>
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Potentional,%20Epanech,%20h%20=%200.4.png?raw=true)
 
+![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/master/Epanech%20potentional.jpg)
+
 <h3><div align="center">Квартическое ядро</div></h3>
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Quartic,%20h%20=%200.4%20,%20eps%20=%207.png?raw=true)
+
+![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/master/Quartic.jpg)
 
 
