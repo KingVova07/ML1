@@ -299,7 +299,7 @@ KWNN <- function(xl, z,k,q)
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Potentional,%20rightangle,%20eps%20=%207.png?raw=true)
 
-![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/master/Rightangle%20potentional.jpg)
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/potential_epanech_core_v2.png?raw=true)
 
 <h3><div align="center">Треугольное ядро</div></h3>
 
