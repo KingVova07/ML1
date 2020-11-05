@@ -67,6 +67,11 @@
 <td>ker = Quatric, h = 0.4, eps = 6</td>
 <td>0.04</td>
  </tr>
+ <tr>
+ <td><strong>naive_bayes</strong></td>
+<td></td>
+ <td><strong>0.04</strong></td>
+ </tr>
  </table>
  
  
@@ -443,6 +448,7 @@ for (i in 1:m) {
 }
 ```
 <h3><strong>Далее определяем саму функцию алгоритма:</strong></h3>
+
 ```R
 naive_Bayes <- function(Py, n, m, mu, sigma, point){
   p <- rep(0, m)
