@@ -404,3 +404,57 @@ contour(x,y,z,add = T ,asp = 1,lwd = 1)
 
 <h3>Точность данного алгоритма на ирисах фишера = 0.94</h3>
 
+Предполагается, что оценивать n одномерных плотностей легче, чем одну n-мерную, поэтому алгоритм называется "наивным". Все объекты выборки X описываются n числовыми признаками fj, где j=1,..,n. Эти признаки являются независимыми случайными величинами. Функции правдоподобия классов выглядят так:
+py(x) = py1(ξ1)⋅⋅⋅pyn(ξn), где pyj(ξj) плотность распределения значений j-го признака для класса y.
+Оценка априорной вероятности:
+
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Оценка%20априорной%20вероятности.png?raw=true)
+
+Эмпирическая оценка n-мерной плотности:
+
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Эмпирическая%20оценка%20n-мерной%20плотности.png?raw=true)
+
+Подставив в байесовское решающее правило эмпирические оценки одномерных плотностей признаков получим алгоритм:
+
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/naivnyy_bayes.jpg?raw=true)
+
+<strong>Суть работы алгоритма:</strong>
+Для начала определяем априорные вероятности каждого класса класса. Затем восстанавливаем матрицы математического ожидания и ковариационной матрицы.
+Вот программная реализация:
+```R
+row <- dim(xl)[1]
+col <- dim(xl)[2]
+n <- col - 1 
+m <- dim(num_x)
+
+Py <- rep(0, m) 
+mu <- matrix(0, m, n)
+sigma <- matrix(0, m, n)
+
+for (i in 1:m) {
+  Py[i] <- num_x[i] / row
+}
+
+for (i in 1:m) {
+  for (j in 1:n) {
+    mu[i, j] <- mean(xl[xl[, 3] == x[i], ][ , j])
+    sigma[i, j] <- var(xl[xl[, 3] == x[i], ][ , j])
+  }
+}
+```
+<h3><strong>Далее определяем саму функцию алгоритма:</strong></h3>
+```R
+naive_Bayes <- function(Py, n, m, mu, sigma, point){
+  p <- rep(0, m)
+  for (i in 1:m) {
+    p[i] <- Py[i]
+    for (j in 1:n) {
+      p[i] <- p[i] * exp((-(point[j] - mu[i, j])^2 * (1/sigma[i, j]))/2) / sqrt(2 * pi * sigma[i, j])
+    }
+  }
+  return(x[which.max(p)])
+}
+```
+<strong>Реализация алгоритма довольна проста, это является преимуществом, также алгоритм оптимален для независимых признаков.</strong>
+
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/naive_Bayes.png?raw=true)
