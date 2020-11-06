@@ -400,10 +400,12 @@ contour(x,y,z,add = T ,asp = 1,lwd = 1)
 
 В случае, когда признаки имеют одинаковые дисперсии, ![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/1a9300b889e45b5cfa705cf39a44c920ad69038a/одинаковые%20дисперсии.svg) , линии уровня имеют форму сфер:
 
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/S2.png?raw=true)
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/График%20одинаковых%20дисперсий.png?raw=true)
 
 В случае, когда признаки коррелированы, а матрица не диагональна, то линии уровня – эллипсоиды, повернутые относительно исходной системы координат:
 
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/S3.png?raw=true)
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/График%20коррелированых.png?raw=true)
 
 <h2>Наивный байесовский классификатор</h2>
@@ -464,4 +466,18 @@ naive_Bayes <- function(Py, n, m, mu, sigma, point){
 ```
 <strong>Реализация алгоритма довольна проста, это является преимуществом, также алгоритм оптимален для независимых признаков.</strong>
 
+<h3> Карта, когда все классы равнозначны</h3>
+
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/naive_Bayes.png?raw=true)
+
+<h3> Карта, когда первый класс важнее чем остальные</h3>
+
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Lambda1.png?raw=true)
+
+<h3> Карта, когда второй класс важнее чем остальные</h3>
+
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Lambda2.png?raw=true)
+
+<h3> Карта, когда третий класс важнее чем остальные</h3>
+
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Lambda3.png?raw=true)
