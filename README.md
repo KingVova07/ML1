@@ -395,6 +395,7 @@ contour(x,y,z,add = T ,asp = 1,lwd = 1)
 <strong>Геометрия нормальной плотности:</strong>
 В случае, когда признаки некореллированы, ![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/1a9300b889e45b5cfa705cf39a44c920ad69038a/некоррелированы.svg), то есть то плотности распределения имеют форму эллипсоидов, параллельных осям координат:
 
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/S1.png?raw=true)
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/График%20некоррелированых.png?raw=true)
 
 В случае, когда признаки имеют одинаковые дисперсии, ![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/1a9300b889e45b5cfa705cf39a44c920ad69038a/одинаковые%20дисперсии.svg) , линии уровня имеют форму сфер:
