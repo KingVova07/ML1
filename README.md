@@ -339,13 +339,13 @@ KWNN <- function(xl, z,k,q)
 
 Он использует функцию отступа:
 
-![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/potential_quarter_core.png?raw=true)
+![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/a66c0ac3bcc3947069f429dfee2fa1ce1a288b70/function%20of%20margin.svg)
 
 W является весовой функцией и зависит от выбранного алгоритма классификации.
 
 Посмотрим на отсортированный список отступов для всех элементов:
 
-![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/potential_quarter_core.png?raw=true)
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/margin.jpg?raw=true)
 
 Вот здесь программная реализация для того чтобы посчитать отступы 
 
@@ -357,6 +357,54 @@ for (i in 1:len){
   margin[i] <- right-wrong  
 }
 ```
+Затем нам необходимо выбросить шумы
+
+```R
+for (i in 1:len){
+  if (margin[i]<0){ 
+    xl<-xl[-i,]
+    len<-len-1
+  }
+}
+```
+
+Выбираем по одному эталону с каждого класса
+
+```R
+for (i in 1:len){
+  if (margin[i]==k && colo[xl[i,3]]==0){
+    new_xl[q,]<-xl[i,]
+    q<-q+1
+    colo[xl[i,3]]=1
+  }
+}
+```
+
+И потом присоединяются объекты, на которых происходит ошибка
+
+```R
+while (dim(new_xl)[1]!=len){
+    wrong<-0
+    right<-0
+    for (i in 1:dim(new_xl)[1]){
+        margin1[i]<-0
+    }
+    for (i in 1:dim(new_xl)[1]){ 
+        zi<-sample(1:len, 1)  
+        z<-xl[zi,]
+        right <- KwNN(new_xl, z,k,1)
+        wrong <- k-right
+        margin1[i] <- right-wrong       
+    }
+    if (length(which(margin1<=0))<dim(new_xl)[1]*0.1){
+        break
+    }
+    Standart<-rbind(Standart,z)
+}
+```
+
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Stolp.jpg?raw=true)
+
 
 
 <h1> Байесовские классификаторы.</h1>
