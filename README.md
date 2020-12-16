@@ -89,11 +89,6 @@
 <td>ker = Quatric, h = 0.4, eps = 6</td>
 <td>0.04</td>
  </tr>
- <tr>
- <td><strong>naive_bayes</strong></td>
-<td></td>
- <td><strong>0.04</strong></td>
- </tr>
  </table>
  
  
