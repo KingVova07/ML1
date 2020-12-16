@@ -642,11 +642,11 @@ naive_Bayes <- function(Py, n, m, mu, sigma, point){
 
 Результаты работы подстановочного алгоритма:
 
-![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/сигма.gif?raw=true)
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/эллипс.jpg?raw=true)
 
-![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/сигма.gif?raw=true)
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/парабола.jpg?raw=true)
 
-![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/сигма.gif?raw=true)
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/гипербола.jpg?raw=true)
 
 <h2>Линейный дискриминант Фишера</h2>
 
