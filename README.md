@@ -655,7 +655,7 @@ naive_Bayes <- function(Py, n, m, mu, sigma, point){
 Алгоритм ЛДФ отличается от подстановочного алгоритма тем, что ковариационые матрицы классов равны, поэтому для их восстановления необходимо использовать все объекты выборки. В этом случае разделяющая кривая вырождается в прямую.
 Если оценить неизвестную 𝛴(ковариационная матрица, то есть их равенство), с учетом смещенности, то получим следующую формулу:
 
-![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/сигма.gif?raw=true)
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/формула%20лдф.gif?raw=true)
 
 Восстановление ковариационных матриц в коде алгоритма:
 
@@ -671,13 +671,13 @@ naive_Bayes <- function(Py, n, m, mu, sigma, point){
 
 Разделяющая плоскость здается формулой:
 
-![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/сигма.gif?raw=true)
+![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/476194473b380b9f7701cfb03d89d5a6f7b2ea90/плоскость%20лдф.svg)
 
 коэффициенты которой находятся следующим образом:
 
-![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/сигма.gif?raw=true)
+![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/476194473b380b9f7701cfb03d89d5a6f7b2ea90/альфа%20лдф.svg)
 
-![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/сигма.gif?raw=true)
+![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/476194473b380b9f7701cfb03d89d5a6f7b2ea90/бета%20лдф.svg)
 
 Программная реализация данной функции нахождения коэффициентов ЛДФ выглядит следующим образом:
 
@@ -689,6 +689,6 @@ beta <- (mu1 %*% inverseSigma %*% t(mu1) - mu2 %*% inverseSigma %*% t(mu2)) / 2
 
 Результат работы алгоритма на ирисах фишера выглядит следующим образом:
 
-![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/сигма.gif?raw=true)
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/LDF_map.png?raw=true)
 
 
