@@ -687,3 +687,10 @@ beta <- (mu1 %*% inverseSigma %*% t(mu1) - mu2 %*% inverseSigma %*% t(mu2)) / 2
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/LDF_map.png?raw=true)
 
 
+<h1>Линейные методы классификации</h1>
+Пусть ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/LDF_map.png?raw=true) , тогда алгоритм ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/LDF_map.png?raw=true)  называется линейным алгоритмом.
+В данном пространстве классы разделяет гиперплоскость, которая задается уравнением: ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/LDF_map.png?raw=true).
+Если x находится по одну сторону гиперплоскости с её направляющим вектором w, то объект x относится к классу +1, в противном случае - к классу -1.
+
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/LDF_map.png?raw=true)
+
