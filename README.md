@@ -662,11 +662,11 @@ naive_Bayes <- function(Py, n, m, mu, sigma, point){
 ```R
     for (i in 1:rows1){
         sigma = sigma + (t(points1[i,] - mu1) %*% (points1[i,] - mu1))
-	}
+    }
 
     for (i in 1:rows2){
         sigma = sigma + (t(points2[i,] - mu2) %*% (points2[i,] - mu2))
-	}
+    }
 ```
 
 Разделяющая плоскость здается формулой:
