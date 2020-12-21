@@ -688,13 +688,15 @@ beta <- (mu1 %*% inverseSigma %*% t(mu1) - mu2 %*% inverseSigma %*% t(mu2)) / 2
 
 
 <h1>Линейные методы классификации</h1>
-Пусть ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Множества%20X%20и%20Y.gif?raw=true) , тогда алгоритм ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Линейный%20алгоритм.gif?raw=true)  называется линейным алгоритмом.
-В данном пространстве классы разделяет гиперплоскость, которая задается уравнением: ![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/9693483b10c5371601046108acf68960d7a902f3/функция.svg).
+Пусть ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Множества%20X%20и%20Y.gif?raw=true) , тогда алгоритм 
+ ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Линейный%20алгоритм.gif?raw=true)  называется линейным алгоритмом.
+В данном пространстве классы разделяет гиперплоскость, которая задается уравнением: 
+ ![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/9693483b10c5371601046108acf68960d7a902f3/функция.svg) .
 Если x находится по одну сторону гиперплоскости с её направляющим вектором w, то объект x относится к классу +1, в противном случае - к классу -1.
-Эмпирический риск представлен следующей формулой: ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Эмпирический%20риск.gif?raw=true)
+Эмпирический риск представлен следующей формулой: ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Эмпирический%20риск.gif?raw=true) 
 Для того, чтобы минимизировать его и подобрать оптимальный вектор весов w, рекомендуется пользоваться методом стохастического градиента.
 
-Существует величина ![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/9796da75f3695147443e9d19253f2e0470f1942f/отступ%20обьекта.svg), которая называется отступом объекта относительно алгоритма клссификации. Если данный отступ отрицательный, тогда алгоритм совершает ошибку.
+Существует величина ![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/9796da75f3695147443e9d19253f2e0470f1942f/отступ%20обьекта.svg) , которая называется отступом объекта относительно алгоритма клссификации. Если данный отступ отрицательный, тогда алгоритм совершает ошибку.
 
 L(M) - функция потерь.
 
