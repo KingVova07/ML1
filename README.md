@@ -692,7 +692,7 @@ beta <- (mu1 %*% inverseSigma %*% t(mu1) - mu2 %*% inverseSigma %*% t(mu2)) / 2
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Множества%20X%20и%20Y.gif?)
 
-, тогда алгоритм 
+тогда алгоритм 
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Линейный%20алгоритм.gif?raw=true) 
 
