@@ -689,7 +689,7 @@ beta <- (mu1 %*% inverseSigma %*% t(mu1) - mu2 %*% inverseSigma %*% t(mu2)) / 2
 
 <h1>Линейные методы классификации</h1>
 Пусть 
-![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Множества%20X%20и%20Y.gif?raw=true)
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Множества%20X%20и%20Y.gif?)
 , тогда алгоритм 
  ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/Линейный%20алгоритм.gif?raw=true)  называется линейным алгоритмом.
 В данном пространстве классы разделяет гиперплоскость, которая задается уравнением: 
