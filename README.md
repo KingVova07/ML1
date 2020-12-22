@@ -714,6 +714,8 @@ L(M) - функция потерь.
 
 <h2>Стохастический градиентный спуск</h2>
 
+[Оглавление](#Оглавление)
+
 Пусть дана обучающая выборка: множество входных значений X и множество выходящих значений Y, такие что каждому входу xj соответствует yj - выход, j = 1..m.
 Нужно найти вектор параметром w, при котором достигается минимум эмпирического риска.
 Для этого применим метод градиентного спуска:
@@ -784,6 +786,8 @@ Q <- (1 - lambda) * Q + lambda * ex
 
 <h2>Адаптивный линейный элемент</h2>
 
+[Оглавление](#Оглавление)
+
 ![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/b48bd8cdd9a6a4038b9368fec49bd1fb5253a44c/loss%20function%20for%20ADALINE.svg) - это квадратичная функция потерь. 
 
 ![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/b48bd8cdd9a6a4038b9368fec49bd1fb5253a44c/Weights%20for%20Adaline.svg) - правило обновления весов на каждом шаге итерации метода стохастического градиента. Данное правило получено путем дифференцирования квадратичной функции.
@@ -802,3 +806,57 @@ w <- w - eta * (wx - yi) * xi
 
 ![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/map%20for%20ADALINE.png?raw=true)
 
+<h2>Персептрон Розенблатта</h2>
+
+![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/6f0ffe1ad88b44c4d19be51bc588f5935ebc811b/loss%20function%20for%20Perceptron.svg)  - данную функцию потерь называют кусочно-линейной.
+![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/6f0ffe1ad88b44c4d19be51bc588f5935ebc811b/Weights%20for%20Perceptron.svg) - правило обновления весов, которое называют правилом Хебба.
+Программная реализация функции потерь:
+```R
+lossPerceptron <- function(x)
+{
+return (max(-x, 0))
+}
+```
+Правило обновления весов:
+```R
+w <- w + eta * yi * xi
+```
+Работа алгоритма:
+
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/map%20for%20Perceptron.png?raw=true)
+
+<h2>Логистическая регрессия</h2>
+
+[Оглавление](#Оглавление)
+
+![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/6f0ffe1ad88b44c4d19be51bc588f5935ebc811b/loss%20function%20for%20logistik.svg) - логистическая функция потерь.
+![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/6f0ffe1ad88b44c4d19be51bc588f5935ebc811b/Weights%20for%20logistik.svg) - правило обновления весов, которое называют логистическим, где сигмоидная функция:
+![screenshot_of_sample](https://raw.githubusercontent.com/KingVova07/ML1/6f0ffe1ad88b44c4d19be51bc588f5935ebc811b/sigma%20for%20logistik.svg)
+
+Программная реализация функции потерь и сигмоидной функции:
+```R
+##Функция потерь
+lossLog <- function(x)
+{
+return (log2(1 + exp(-x)))
+}
+## Сигмоидная функция
+sigmoidFunction <- function(z)
+{
+return (1 / (1 + exp(-z)))
+}
+```
+
+Правило обновления весов:
+```R
+w <- w + eta * xi * yi * sigmoidFunction(-wx * yi)
+```
+Работа алгоритма:
+
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/map%20for%20logistik.png?raw=true)
+
+<h2>Сравнение алгоритмов</h2>
+
+[Оглавление](#Оглавление)
+
+![screenshot_of_sample](https://github.com/KingVova07/ML1/blob/master/map%20for%20all.png?raw=true)
